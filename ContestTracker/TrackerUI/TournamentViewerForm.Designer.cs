@@ -179,10 +179,11 @@
             // 
             // scoreButton
             // 
+            this.scoreButton.BackColor = System.Drawing.Color.Silver;
             this.scoreButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.scoreButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.scoreButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.scoreButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.scoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.scoreButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.scoreButton.Location = new System.Drawing.Point(639, 318);
             this.scoreButton.Name = "scoreButton";
@@ -190,7 +191,7 @@
             this.scoreButton.TabIndex = 13;
             this.scoreButton.Text = "Score";
             this.scoreButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.scoreButton.UseVisualStyleBackColor = true;
+            this.scoreButton.UseVisualStyleBackColor = false;
             // 
             // TournamentViewerForm
             // 
