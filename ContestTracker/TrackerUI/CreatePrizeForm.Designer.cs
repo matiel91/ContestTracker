@@ -94,6 +94,7 @@
             this.prizeAmountValueTextBox.Name = "prizeAmountValueTextBox";
             this.prizeAmountValueTextBox.Size = new System.Drawing.Size(189, 35);
             this.prizeAmountValueTextBox.TabIndex = 19;
+            this.prizeAmountValueTextBox.Text = "0";
             // 
             // prizeAmountLabel
             // 
@@ -123,6 +124,7 @@
             this.prizePercentageValueTextBox.Name = "prizePercentageValueTextBox";
             this.prizePercentageValueTextBox.Size = new System.Drawing.Size(189, 35);
             this.prizePercentageValueTextBox.TabIndex = 21;
+            this.prizePercentageValueTextBox.Text = "0";
             // 
             // createPrizeButton
             // 
@@ -139,6 +141,7 @@
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.createPrizeButton.UseVisualStyleBackColor = false;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
             // orLabel
             // 
