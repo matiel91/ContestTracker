@@ -36,17 +36,17 @@ namespace TrackerLibrary
         */
         public static IDataConnection Connection { get; private set; }
 
-        public static void InitializeConnection(string connectionType) //in future we can easy extend connection sources in this method
+        public static void InitializeConnection(DataBaseType db) //
         {
             //Connections = new List<IDataConnection>(); // - initialing list before c# 6.0
-            if (connectionType == "sql")
+            if (DataBaseType.Sql == db)
             {
                 // TODO - Set up SQL connector properly
                 SQLConnector sql = new SQLConnector();
                 Connection = sql;
             }
 
-            else if(connectionType == "text")
+            else if(DataBaseType.TextFile == db)
             {
                 //TODO - Create the Text Connextion
                 TextConnector text = new TextConnector();
