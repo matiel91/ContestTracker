@@ -21,14 +21,14 @@ namespace TrackerLibrary
             //Connections = new List<IDataConnection>(); // - initialing list before c# 6.0
             if (true == dataBase)
             {
-                // TODO - Set up SQL connector properly
+                
                 SQLConnector sql = new SQLConnector();
                 Connections.Add(sql);
             }
 
             if(true == textFiles)
             {
-                //TODO - Create the Text Connextion
+                
                 TextConnector text = new TextConnector();
                 Connections.Add(text);
             }
@@ -41,14 +41,14 @@ namespace TrackerLibrary
             //Connections = new List<IDataConnection>(); // - initialing list before c# 6.0
             if (DataBaseType.Sql == db)
             {
-                // TODO - Set up SQL connector properly
+                
                 SQLConnector sql = new SQLConnector();
                 Connection = sql;
             }
 
             else if(DataBaseType.TextFile == db)
             {
-                //TODO - Create the Text Connextion
+                
                 TextConnector text = new TextConnector();
                 Connection = text;
             }
